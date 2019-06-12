@@ -5,14 +5,13 @@
 # 15의 배수, "fizzbuzz"
 # 나머지, 1
 
-n = int(input())
+n = int(input("숫자입력 : "))
 
-for i in range(1, n+1) :
-    if (n % 15 == 0) :
-        print("fizzbuzz")
-    elif (n % 5 == 0) :
-        print("buzz")
-    elif (n % 3 == 0) :
-        print("fizz")
-    else :
-        print(i)
+if (n % 15 == 0) :
+    print([n, 15*n, "fizzbuzz"])
+elif (n % 3 == 0) :
+    print([n, 3*n, "fizz"])
+elif (n % 5 == 0) :
+    print([n, 5*n, "buzz"])
+else :
+    print(n, n+1, n+2)
